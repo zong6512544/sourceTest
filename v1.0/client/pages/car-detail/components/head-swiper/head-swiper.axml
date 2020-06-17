@@ -1,0 +1,15 @@
+ <swiper
+  class="swiper-detail"
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  vertical="{{vertical}}"
+  interval="{{interval}}"
+>
+<swiper-item key="swiper-item-{{index}}" a:for="{{list}}" class="items">
+   <image   
+        lazy-load="{{true}}"
+        src="https://gw.alipayobjects.com/mdn/rms_107da2/afts/img/A*_51UQr4yZMgAAAAAAAAAAABkARQnAQ"
+        mode="scaleToFill"
+   />
+</swiper-item>
+</swiper>

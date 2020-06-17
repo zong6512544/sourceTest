@@ -1,0 +1,81 @@
+<view class="order">
+  <re-time 
+    a:if="{{unpaid}}"
+    reTime="{{contractAnotherInfo.createTime}}"
+  />
+  <view class="order-goods-info top-margin">
+    <!-- 待支付---倒计时 -->
+    <!-- 车辆信息 -->
+    <view class="order-goods-info-header">
+      车辆信息
+    </view>
+    <view class="order-goods-info-body">
+      <image class="order-goods-info-body__image" lazy-load="{{true}}" src="https://gw.alipayobjects.com/mdn/rms_107da2/afts/img/A*DenfRpLr6NEAAAAAAAAAAABkARQnAQ" mode="scaleToFill" />
+      <view class="order-goods-info-body__name">
+        <!-- {{item.product.name}} -->
+        电瓶车
+      </view>
+      <view class="order-goods-info-body__payinfo">
+        <view>
+          <!-- ￥{{item.product.price}} -->
+          ￥5000
+        </view>
+        <view>
+          <!-- ✖️{{item.product.num}} -->
+          ✖️1
+        </view>
+        <view>
+          <!-- 合计： ￥ {{item.product.totalPrice}} -->
+          合计： ￥ 5000
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 电子合同 -->
+  <view class="order-contract top-margin">
+    <view>
+        电子合同
+    </view>
+    <view onTap="">
+        查看
+    </view>
+  </view>
+  <!-- 订单详情 -->
+  <view class="order-another top-margin">
+    <view class="order-another-header">
+      其他信息
+    </view>
+    <!-- require -->
+    <view class="order-another-info-item">
+      订单编号：{{contractAnotherInfo.orderNo}}
+    </view>
+    <view class="order-another-info-item" a:if="{{contractAnotherInfo.exchangeNo}}">
+      支付宝交易号：{{contractAnotherInfo.exchangeNo}}
+    </view>
+    <!-- require -->
+    <view class="order-another-info-item">
+      创建时间：{{contractAnotherInfo.createTime}}
+    </view>
+    <!--  -->
+    <view class="order-another-info-item" a:if="{{contractAnotherInfo.paidTime}}">
+      付款时间：{{contractAnotherInfo.paidTime}}
+    </view>
+    <!--  -->
+    <view class="order-another-info-item" a:if="{{contractAnotherInfo.refundTime}}">
+      退款时间：{{contractAnotherInfo.refundTime}}
+    </view>
+    <!--  -->
+    <view class="order-another-info-item" a:if="{{contractAnotherInfo.refundNo}}">
+      退款流水号：{{contractAnotherInfo.refundNo}}
+    </view>
+    <!--  -->
+    <view class="order-another-info-item" a:if="{{contractAnotherInfo.installment}}">
+      <!-- 花呗分期：¥178（含手续费）*12期 -->
+      花呗分期：¥
+      {{contractAnotherInfo.installment.payfor}}
+      （含手续费）*
+      {{contractAnotherInfo.installment.total}}
+      期
+    </view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<view class="user">
+  <view class="user-profile">
+    <view class="user-profile__left">
+      <view class="user-profile__name">
+          {{currentUser.name}}
+      </view>
+      <view class="user-profile__credit">
+        {{currentUser.creditList[currentUser.credit]}}
+      </view>
+    </view>
+    
+    <view class="user-profile__right">
+      <image
+      class="user-profile__avatar"
+      src="{{currentUser.headImg}}"
+      mode="scaleToFill"
+      />
+    </view>
+  </view>
+
+  <block a:for="{{navList}}">
+    <list-item
+      className="list-item"
+      arrow="{{true}}"
+      onClick="onListClick"
+      data-index="{{index}}"
+      key="items-{{index}}"
+      last="{{index === (items.length - 1)}}"
+    >
+      {{item.name}}
+    </list-item>
+  </block>
+
+</view>

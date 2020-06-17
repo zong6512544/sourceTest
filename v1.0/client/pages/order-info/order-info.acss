@@ -1,0 +1,93 @@
+.order {
+  position: relative;
+  width: 100vw;
+  overflow: auto;
+  background: #EFEEF4;
+  font-size: 28rpx;
+  color: #222222;
+}
+
+.top-margin{
+  margin-top: 20rpx;
+}
+
+.order-goods-info {
+  padding: 0 24rpx 28rpx;
+  background: #fff;
+}
+
+.order-goods-info-header {
+  font-size: 28rpx;
+  line-height: 66rpx;
+  color: #656466;
+}
+
+.order-goods-info-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 20rpx;
+}
+
+/* 商品图片 */
+
+.order-goods-info-body__image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+/* 产品名 */
+
+.order-goods-info-body__name {
+  font-size: 28rpx;
+}
+
+/* 产品payinfo */
+
+.order-goods-info-body__payinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
+  font-size: 28rpx;
+}
+
+.order-goods-info-body__payinfo view {
+  display: block;
+  white-space: nowrap;
+}
+
+.order-goods-info-body__payinfo view:last-child {
+  font-size: 30rpx;
+}
+
+/* 电子合同 */
+.order-contract{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #fff;
+  overflow: hidden;
+}
+
+.order-contract view:last-child{
+  color: #789AE2;
+}
+
+/* 合同其他信息 */
+.order-another{
+  padding: 20rpx 24rpx;
+  background: #fff;
+  color: #101010;
+}
+
+.order-another-header{
+  font-size: 28rpx;
+}
+
+.order-another-info-item{
+  font-size: 26rpx;
+  margin: 10rpx 0;
+  color: #666666;
+}

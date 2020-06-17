@@ -1,0 +1,19 @@
+.swiper-detail{
+  height:300px!important;
+  border-bottom: 1px solid #f2f2f2
+}
+.swiper-detail ::before{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    background-color: #EBEEF5;
+    z-index: 1;
+}
+.items{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

@@ -1,0 +1,12 @@
+<view class="container">
+  <view>
+      等待卖家付款
+  </view>
+  <view>
+      剩
+      {{hours}}
+      小时
+      {{minutes}}
+      分钟自动关闭
+  </view>
+</view>

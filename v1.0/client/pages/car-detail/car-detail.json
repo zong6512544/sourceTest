@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "",
+  "usingComponents": {
+    "title": "/components/Title/Title",
+    "head-swiper": "/pages/car-detail/components/head-swiper/head-swiper"
+  }
+}

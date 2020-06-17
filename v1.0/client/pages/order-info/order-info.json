@@ -1,0 +1,7 @@
+{
+    "defaultTitle": "",
+    "usingComponents": {
+        "ready-pay":"./components/readyPay/readyPay",
+        "re-time":"./components/reTime/reTime"
+    }
+}

@@ -1,0 +1,68 @@
+page {
+  background-color: rgba(239, 238, 244, 1);
+}
+
+.user{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* background-color: #009d9a; */
+  font-size: 32rpx;
+  font-family: Arial;
+  color: #101010;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 56rpx 16rpx;
+  margin: 28rpx 0;
+  background: #fff;
+}
+
+/* 左侧信息 */
+.user-profile__left {
+  margin-left: 18rpx;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+
+.user-profile__left view{
+  display: block;
+}
+
+.user-profile__name {
+  color: rgba(16, 16, 16, 1);
+}
+
+.user-profile__credit {
+  font-size: 30rpx;
+  color: #56A2E1;
+}
+
+/* 右侧头像 */
+.user-profile__right {
+  padding: 15rpx;
+  border-radius: 4px 4px 4px 4px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.user-profile__avatar {
+  width: 176rpx;
+  height: 176rpx;
+  vertical-align: middle;
+}
+
+.list-item {
+  line-height: 130rpx;
+}
+
+.list-item .am-list-content, .list-item .am-list-extra {
+  font-size: 30rpx;
+  line-height: inherit;
+  padding: 0;
+}

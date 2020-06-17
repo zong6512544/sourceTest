@@ -1,0 +1,18 @@
+<view class="location">
+  <view class="location-description">
+    <image
+      class="location-description__logo"
+      src="https://gw.alipayobjects.com/mdn/rms_107da2/afts/img/A*JOy0QqiN0qUAAAAAAAAAAABkARQnAQ"
+      mode="scaleToFill"
+    />
+    <text class="location-description__title">屈臣氏亲橙里店</text>距离1.4km
+  </view>
+  <view class="location-action">
+    <!-- <button size="default" type="primary"  onTap="change">切换</button> -->
+    <navigator url="../my/my" hover-class="navigator-hover">切换</navigator>
+    <image
+      src="https://gw.alipayobjects.com/mdn/rms_107da2/afts/img/A*tuXAT6mNwWUAAAAAAAAAAABkARQnAQ"
+      mode="scaleToFill"
+    />
+  </view>
+</view>

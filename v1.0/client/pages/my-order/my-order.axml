@@ -1,0 +1,64 @@
+<view class="order">
+  <view 
+    class="order-section"
+    a:for="{{orderList}}"
+    a:key="*this"
+  >
+    <view class="order-section-header">
+      <view class="order-section-header__num">{{item.contractNo}}</view>
+      <view 
+        class="order-section-header__state" 
+        onTap="onListClick"
+        data-orderNo="{{item.contractNo}}"
+        data-status="{{item.status}}"
+      >
+        {{item.status}} 
+        <image
+          src="https://gw.alipayobjects.com/mdn/rms_107da2/afts/img/A*tuXAT6mNwWUAAAAAAAAAAABkARQnAQ"
+          mode="scaleToFill"
+        />
+      </view>
+    </view>
+
+    <view class="order-section-body">
+      <image
+        class="order-section-body__image"
+        lazy-load="{{true}}"
+        src="{{item.product.image[0]}}"
+        mode="scaleToFill"
+      />
+
+      <view class="order-section-body__name">
+        {{item.product.name}}
+      </view>
+
+      <view class="order-section-body__payinfo">
+        <view>
+          ￥{{item.product.price}}
+        </view>
+        <view>
+          <!-- ✖️{{item.product.num}} -->
+          x {{item.product.num}}
+        </view>
+        <view>
+          合计： ￥ {{item.product.totalPrice}}
+        </view>
+      </view>
+
+    </view>
+
+    <view class="order-section-body__control" a:if="{{item.status == '待支付'}}">
+      <button size="mini">继续支付</button>
+    </view>
+
+    <view class="order-section-body__control" a:if="{{item.status == '待提车'}}">
+      <button size="mini">立即提车</button>
+    </view>
+
+  </view>
+
+  <view class="order-section-footer">
+      
+  </view>
+
+</view>
